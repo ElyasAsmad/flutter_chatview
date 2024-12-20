@@ -158,7 +158,8 @@ class _VoiceMessageViewState extends State<VoiceMessageView> {
     if (playerState.isInitialised ||
         playerState.isPaused ||
         playerState.isStopped) {
-      controller.startPlayer(finishMode: FinishMode.pause);
+      // controller.startPlayer(finishMode: FinishMode.pause);
+      controller.startPlayer();
     } else {
       controller.pausePlayer();
     }
